@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutotestPlat</title>
+    <style> body {
+        text-align: center
+    }</style>
+</head>
+<body>
+<font size="1">
+    <h1><
+        <自动化平台测试开发>>
+    </h1>
+</font>
+<form method="post" action="/login/">
+    {% csrf_token %}
+    <br><a>&nbsp;&nbsp;用户名: </a><input name="username" type="text" placeholder="username">
+    <br><br><a> &nbsp; 密&nbsp;&nbsp;&nbsp;码: &nbsp;</a><input name="password" type="password" placeholder="password">
+    {{ error }}<br>
+    <br>
+    <button style="with:200px;height:28px;" id="submit" type="submit">submit</button>
+</form>
+
+
+</body>
+</html>
